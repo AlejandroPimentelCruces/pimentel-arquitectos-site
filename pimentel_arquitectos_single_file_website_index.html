@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PIMENTEL + ARQUITECTOS — Alejandro Pimentel Cruces</title>
+  <meta name="description" content="PIMENTEL + ARQUITECTOS — Arquitectura y paisaje de lujo. Proyectos en México y Colombia: retail de alto nivel, vivienda y paisaje.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f0f;
+      --card:#111111;
+      --muted:#cfc7bf;
+      --accent:#c08a4b; /* warm gold */
+      --terra:#8b3e2f; /* terracotta */
+      --glass: rgba(255,255,255,0.04);
+      --radius:16px;
+      color-scheme: dark;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#060606 0%, #0f0f0f 100%);color: #eee}
+    a{color:var(--accent);text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 40px}
+    .brand{display:flex;align-items:center;gap:18px}
+    .logo{display:inline-grid;place-items:center;width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--terra),#3b2b22);font-family:'Playfair Display';font-weight:700;font-size:22px;color:rgba(255,255,255,0.96)}
+    .firm{line-height:1}
+    .firm h1{margin:0;font-family:'Playfair Display';letter-spacing:1px;font-size:18px}
+    .firm p{margin:0;font-size:12px;color:var(--muted)}
+
+    nav a{margin-left:20px;font-weight:600;font-size:14px;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:48px;padding:64px 40px;align-items:center}
+    .hero-left h2{font-family:'Playfair Display';font-size:48px;margin:0 0 18px 0}
+    .hero-left p{color:var(--muted);max-width:70%;line-height:1.6}
+    .founder{margin-top:22px;font-size:13px;color:var(--muted)}
+
+    .card{background:linear-gradient(180deg,var(--glass),transparent);padding:22px;border-radius:var(--radius);backdrop-filter:blur(6px);box-shadow:0 6px 30px rgba(0,0,0,0.6)}
+
+    .cta{display:flex;gap:12px;margin-top:28px}
+    .btn{padding:12px 18px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);background:transparent;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),#d79b5a);color:#111;border:none}
+
+    .hero-right{display:flex;flex-direction:column;gap:14px}
+    .stat{display:flex;justify-content:space-between;align-items:center}
+    .stat strong{font-size:18px}
+    .stat small{color:var(--muted)}
+
+    main{padding:40px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .project{border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(0,0,0,0.25),rgba(0,0,0,0.4));min-height:220px;display:flex;flex-direction:column}
+    .project img{width:100%;height:160px;object-fit:cover;display:block}
+    .project .info{padding:14px}
+    .project h3{margin:0 0 6px 0;font-family:'Playfair Display';font-size:16px}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+
+    footer{padding:40px;background:linear-gradient(180deg,#070707, #0d0d0d);display:flex;justify-content:space-between;gap:20px}
+    .contact{max-width:420px}
+    .social{display:flex;gap:12px}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .hero-left p{max-width:100%}
+      header{padding:20px}
+      .hero{padding:28px 20px}
+      main{padding:20px}
+      footer{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">P+</div>
+      <div class="firm">
+        <h1>PIMENTEL + ARQUITECTOS</h1>
+        <p>Fundado por Alejandro Pimentel Cruces — 2022</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#projects">Proyectos</a>
+      <a href="#about">Nosotros</a>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h2>Arquitectura con propósito — lujo respetuoso del contexto</h2>
+      <p>Diseñamos espacios comerciales y residenciales en México y Colombia, integrando paisaje, materiales locales y propuestas de experiencia para el usuario final. Especializados en retail de alta gama, vivienda y diseño de paisaje.</p>
+      <div class="founder card">
+        <strong>Alejandro Pimentel Cruces</strong>
+        <div style="font-size:13px;color:var(--muted);margin-top:6px">Fundador. Dirección de proyectos, concepto y diseño. PIMENTEL + ARQUITECTOS — desde 2022.</div>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Solicitar reunión</a>
+        <a class="btn" href="#projects">Ver proyectos</a>
+      </div>
+    </div>
+    <aside class="hero-right">
+      <div class="card">
+        <div class="stat"><strong>2</strong><small>Países: México, Colombia</small></div>
+        <div class="stat"><strong>2022</strong><small>Año de fundación</small></div>
+        <div class="stat"><strong>Retail • Vivienda • Paisaje</strong><small>Áreas de práctica</small></div>
+      </div>
+      <div class="card" style="text-align:center;font-size:13px;color:var(--muted)">Disponible para comisiones residenciales y comerciales. Propuestas conceptuales, dirección de obra y coordinación multidisciplinaria.</div>
+    </aside>
+  </section>
+
+  <main>
+    <section id="projects">
+      <h2 style="font-family:'Playfair Display';font-size:28px;margin:0 0 18px 0">Proyectos destacados</h2>
+      <div class="projects">
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Proyecto retail de alta gama - fachada y vitrina">
+          <div class="info">
+            <h3>Retail — Boutique (Ciudad de México)</h3>
+            <p>Concepto de vitrina interactiva, materiales locales y recorrido experiencial para clientes de alto nivel.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Casa contemporánea con patio central">
+          <div class="info">
+            <h3>Vivienda unifamiliar (Antioquia, Colombia)</h3>
+            <p>Integración de paisaje y patios internos para microclima y privacidad. Materialidad cálida y atemporal.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1505691723518-36a6dc2d3f19?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Parque urbano y ajardinamiento">
+          <div class="info">
+            <h3>Paisajismo urbano (México)</h3>
+            <p>Remodelación de espacio público con enfoque en hidrología urbana y especies nativas.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Interior retail de lujo con exhibidores">
+          <div class="info">
+            <h3>Retail — Flagship store (Bogotá)</h3>
+            <p>Diseño interior y dirección de obra para tienda insignia, enfocada en recorrido y materiales sostenibles.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:38px">
+      <h2 style="font-family:'Playfair Display';font-size:24px;margin-bottom:12px">Nosotros</h2>
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <div style="flex:1;min-width:280px">
+          <p style="color:var(--muted);line-height:1.6">PIMENTEL + ARQUITECTOS nace en 2022 con la intención de proponer arquitectura que dialogue con su región y su gente. Nuestro enfoque combina investigación contextual, uso responsable de materiales y atención al detalle. Liderados por Alejandro Pimentel Cruces, asumimos proyectos de ideación hasta la ejecución y entrega.</p>
+        </div>
+        <div style="flex:320px;min-width:280px">
+          <ul style="color:var(--muted);line-height:1.8">
+            <li><strong>Servicios:</strong> Arquitectura conceptual y ejecutiva</li>
+            <li>Dirección de obra y coordinación multidisciplinaria</li>
+            <li>Diseño de interiores y experiencia de retail</li>
+            <li>Paisajismo y diseño de espacios exteriores</li>
+            <li>Investigación de materiales y sustentabilidad</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:38px">
+      <h2 style="font-family:'Playfair Display';font-size:24px;margin-bottom:12px">Proceso</h2>
+      <div style="display:flex;gap:16px;flex-wrap:wrap">
+        <div class="card" style="flex:1;min-width:220px">
+          <strong>Diagnóstico & Investigación</strong>
+          <p style="color:var(--muted);font-size:13px">Contexto, sitio, legislación, y brief del cliente.</p>
+        </div>
+        <div class="card" style="flex:1;min-width:220px">
+          <strong>Concepto & Diseño</strong>
+          <p style="color:var(--muted);font-size:13px">Propuesta formal, paleta material y maqueta digital.</p>
+        </div>
+        <div class="card" style="flex:1;min-width:220px">
+          <strong>Documentación Ejecutiva</strong>
+          <p style="color:var(--muted);font-size:13px">Planos constructivos, especificaciones y presupuesto aproximado.</p>
+        </div>
+        <div class="card" style="flex:1;min-width:220px">
+          <strong>Dirección de Obra</strong>
+          <p style="color:var(--muted);font-size:13px">Coordinación, visitas y supervisión hasta entrega final.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="contact">
+      <h3 style="font-family:'Playfair Display';margin:0 0 8px 0">Contacto</h3>
+      <p style="color:var(--muted);margin:0 0 8px 0">Para comisiones, consultas o descargar el portafolio, escríbenos:</p>
+      <p style="margin:0 0 8px 0"><strong>Alejandro Pimentel Cruces</strong></p>
+      <p style="margin:0 0 8px 0;color:var(--muted)">Email: <a href="mailto:info@pimentel-arquitectos.com?subject=Contacto%20desde%20web">info@pimentel-arquitectos.com</a></p>
+      <p style="margin:0 0 8px 0;color:var(--muted)">Tel: +52 55 0000 0000 (ejemplo)</p>
+      <div class="social" style="margin-top:14px">
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+    <div style="max-width:520px">
+      <h3 style="font-family:'Playfair Display';margin:0 0 8px 0">Solicita una propuesta</h3>
+      <p style="color:var(--muted);">Rellena el correo con el asunto: <strong>Solicitud de reunión — [Nombre]</strong> y cuéntanos el alcance, presupuesto estimado y ubicación.</p>
+      <div style="margin-top:12px">
+        <a class="btn primary" href="mailto:info@pimentel-arquitectos.com?subject=Solicitud%20de%20reuni%C3%B3n">Enviar correo</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Small enhancement: smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});} 
+      })
+    })
+  </script>
+</body>
+</html>
